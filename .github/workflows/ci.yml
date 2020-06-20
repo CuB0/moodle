@@ -14,4 +14,4 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.KEY }}
-          script: cd ${{ secrets.PROJECT_PATH }} && /usr/bin/php admin/cli/maintenance.php --enable && git pull && /usr/bin/php admin/cli/upgrade.php && /usr/bin/php admin/cli/maintenance.php --disable
+          script: cd ${{ secrets.PROJECT_PATH }} && /usr/bin/php admin/cli/maintenance.php --enable && git pull && /usr/bin/php admin/cli/upgrade.php --non-interactive && /usr/bin/php admin/cli/maintenance.php --disable
