@@ -1,3 +1,6 @@
 [submodule "mod/mod_zoom"]
 	path = mod/mod_zoom
 	url = https://github.com/ucla/moodle-mod_zoom.git
+[submodule "mod/zoom"]
+	path = mod/zoom
+	url = https://github.com/ucla/moodle-mod_zoom.git
